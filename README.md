@@ -1,0 +1,67 @@
+Sum of positive square elements of the array
+Here we will learn about Sum of positive square elements of array.
+
+For this program, we need to find the square of every element and add all these square elements.
+
+Example
+Input:       1 2 3 4 5
+
+Square:     1 4 9 16 25
+
+sum:        1+4+9+16+25=55
+
+now we will see the working of program and java program of the square sum of elements.
+
+Square sum
+Working
+Step 1. Initialize arrays.
+
+Step 2. Declare the scanner class for taking input.
+
+Step 3. take array size from the user.
+
+Step 4. Take an element of the array from the user.
+
+Step 5.  Print the return value of the function SquareSum.
+
+SquareSum(int a[], int size)
+
+Step 1. Initialise two-variable sum and square with zero.
+
+Step 2.  Declare loop from zero to size.
+
+Step 3.  Inside the loop calculate the square of every element.
+
+Step 4.  Inside the loop calculate the sum, add the sum with a square.
+
+Step 5. Return sum.
+
+C	JAVA	Python
+#include <stdio.h>  
+int main()  
+{
+    int n, i , j, sum = 0;
+    printf("enter size : ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter elements : ");
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0; i<n; i++)
+    {
+        sum = sum + (arr[i]*arr[i]);
+    }
+    printf("Sum is : %d",sum);
+    return 0;
+}
+Output
+enter size 
+4
+enter element
+1
+2
+3
+4
+square sum of element 30
